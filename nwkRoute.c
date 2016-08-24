@@ -266,7 +266,6 @@ void nwkRoutePrepareTx(NwkFrame_t *frame)
   {
     header->macDstAddr = NWK_BROADCAST_ADDR;
   }
-
   else if (header->nwkFcf.linkLocal)
   {
     header->macDstAddr = header->nwkDstAddr;
@@ -279,7 +278,6 @@ void nwkRoutePrepareTx(NwkFrame_t *frame)
     header->nwkFcf.linkLocal = 1;
   }
 #endif
-
   else
   {
     header->macDstAddr = NWK_RouteNextHop(header->nwkDstAddr, header->nwkFcf.multicast);

@@ -4,3 +4,4 @@
 // files they need. For example:
 // #include <lwm.h>
 // #include <lwm/nwk/nwk.h>
+// #include <lwm/sys/sysConfig.h>
